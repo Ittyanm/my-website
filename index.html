@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SummerCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow|Raleway" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="http://nkmrkisk.com/demo/2016/js/raindrops.js" type="text/javascript"></script>
+</head>
+
+<body>
+   <div id="target">
+       <h1 class="top-title">MOROZOFF</h1>
+   </div>
+    <script>
+        jQuery(function () {
+            jQuery('#target').raindrops({
+                waveLength: 100, // 波の起点とその波及先になる要素の数を指定できます。デフォルトは340。
+                canvasWidth: 0, // canvasの横幅の指定になります。rightPaddingとの合計がcanvasの全幅になります。デフォルトは100%です。
+                canvasHeight: 0, // canvasの高さです。デフォルトは50%
+                color: '#FFEC9F', // canvasの水面下のカラーを指定できます。デフォルトは#00aeef
+                frequency: 3, // 波紋の発生頻度を設定できます。デフォルトは3です。
+                waveHeight: 300, // 波の高さを指定できます。デフォルトは100
+                density: 0.02, // 波の密度を指定できます。波紋の影響度合いのような感じです。デフォルトは0,02
+                rippleSpeed: 0.1, // 波紋の速度を指定できます。デフォルトは0.1
+                rightPadding: 20, // 右のパディングを設定できます。
+                position: 'absolute', //ポジションの設定ができます。
+                positionBottom: 0, // CSSのbottomの設定ができます。
+                positionLeft: 0 // CSSのLeftの設定ができます。
+            });
+        })
+    </script>
+</body>
+
+</html>
